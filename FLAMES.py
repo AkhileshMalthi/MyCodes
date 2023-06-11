@@ -1,4 +1,4 @@
-#A python program to get the Flames of two numbers
+#A python program to get the FLAMES of two NAMES
 def numofuncommons():
     num = len(name1+name2)
     for i in range(len(name1)):
