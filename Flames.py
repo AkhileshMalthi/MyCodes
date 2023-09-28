@@ -31,16 +31,19 @@ def relation(steps):
 
 def result():
     relation(numofuncommons(name1,name2))
-
-name1 = input("Enter First name: ").casefold()
-name1 = "".join(name1.split())
-
-name2 = input("Enter Second name: ").casefold()
-name2 = "".join(name2.split())
-
-# for faster result i will choose the smaller name as name1 and the otherone as name2
-if len(name1) > len(name2):
-    name1,name2 = name2,name1
+        
+def get_details():
+        name1 = input("Enter First name: ").casefold()
+        name1 = "".join(name1.split())
+        
+        name2 = input("Enter Second name: ").casefold()
+        name2 = "".join(name2.split())
+        
+        # for faster result i will choose the smaller name as name1 and the otherone as name2
+        if len(name1) > len(name2):
+            name1,name2 = name2,name1
+        return name1,name2
 
 if __name__ == '__main__':
-    result();
+        name1,name2 = get_details()
+        result()
